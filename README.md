@@ -13,11 +13,17 @@
 ## Задание 1.
 Проверка цепочки редиректов с http://mail.ru на https://mail.ru/ с помощью curl -v.
 
+Архитектура решения:
+<img width="950" height="274" alt="image" src="https://github.com/user-attachments/assets/42de43b4-9434-47b8-98bf-0064c51f9946" />
+
 Делаем запрос curl -v http://mail.ru . Запрос падает в ошибку 301 и с помощью curl автоматически переходить на защищенный канал https, который уже в свою очередь передает html с информацией о странице.
 <img width="1269" height="445" alt="image" src="https://github.com/user-attachments/assets/1184a79d-baeb-493c-aced-90d3bb2a4e2e" />
 
 ## Задание 2.
 API для "Личные заметки" (сущность: id, title, content).
+
+Архитектура решения:
+<img width="953" height="270" alt="image" src="https://github.com/user-attachments/assets/30244c7c-a1a0-4abe-b22d-4848473454a9" />
 
 Устанавливаем Nginx
 ```
@@ -121,6 +127,9 @@ if __name__ == '__main__':
 
 ## Задание 3.
 Настроить кеширование всех GET-запросов к API на 1 минуту.
+
+Архитектура решения:
+<img width="949" height="273" alt="image" src="https://github.com/user-attachments/assets/ba99f17a-db86-41fa-9ea6-71e2ec000c61" />
 
 Открываем конфигурационный файл Nginx.
 ```
